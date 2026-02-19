@@ -5,7 +5,7 @@ import { ChevronDown, ArrowRight } from 'lucide-react';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Contect from './components/contact';
-import { Featured_Projects } from './components/featured-projects';
+import { Featured_Projects } from './components/projects';
 import { Technologies } from './components/technologies';
 import { Services } from './components/services';
 

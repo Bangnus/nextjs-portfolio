@@ -1,5 +1,7 @@
 import React from 'react'
-import { Github, ExternalLink, } from 'lucide-react';
+import { Github, PenTool } from 'lucide-react';
+import Image from 'next/image';
+import ClinicDesign from '../../public/images/ClinicDesign.png'
 
 export const Featured_Projects = () => {
     return (
@@ -10,9 +12,9 @@ export const Featured_Projects = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Projects</h2>
                         <p className="text-slate-400">Selected freelance works and complex system developments.</p>
                     </div>
-                    <button className="hidden md:flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors mt-4 md:mt-0">
+                    <a href='https://github.com/Bangnus' target='_blank' rel='noopener noreferrer' className="hidden md:flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-medium transition-colors mt-4 md:mt-0">
                         View GitHub <Github className="w-4 h-4" />
-                    </button>
+                    </a>
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-10">
@@ -37,12 +39,9 @@ export const Featured_Projects = () => {
                                 A custom-built web application designed to streamline stock tracking and order processing. Features include real-time data visualization, barcode integration, and automated reporting.
                             </p>
                             <div className="flex gap-4">
-                                <button className="text-sm font-semibold text-white flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                                    <ExternalLink className="w-4 h-4" /> Live Demo
-                                </button>
-                                <button className="text-sm font-semibold text-slate-400 flex items-center gap-2 hover:text-white transition-colors">
+                                <a href='' target='_blank' rel='noopener noreferrer' className="text-sm font-semibold text-slate-400 flex items-center gap-2 hover:text-white transition-colors">
                                     <Github className="w-4 h-4" /> Source Code
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -52,23 +51,23 @@ export const Featured_Projects = () => {
                         <div className="h-64 bg-slate-800 relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
                             <div className="w-full h-full bg-slate-700 group-hover:scale-105 transition-transform duration-500 flex items-center justify-center text-slate-500">
-                                [Image: Modern Clinic Website Design]
+                                <Image src={ClinicDesign} alt='Wellness Clinic' />
                             </div>
                         </div>
                         <div className="p-8 relative z-20">
                             <div className="flex gap-2 mb-4 flex-wrap">
-                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-pink-500/10 text-pink-400 border border-pink-500/20">Figma</span>
-                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">React</span>
-                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">Tailwind</span>
+                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-pink-500/10 text-pink-400 border border-pink-500/20">UI / UX Design</span>
+                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Figma Prototype</span>
+                                <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 border border-green-500/20">Accessibility</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Wellness Clinic Platform</h3>
+                            <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Wellness Clinic — UI/UX Design</h3>
                             <p className="text-slate-400 mb-6 leading-relaxed">
-                                Designed and developed a modern, trustworthy user interface for a medical clinic. Key focus on accessibility, mobile responsiveness, and an integrated appointment booking flow.
+                                High-fidelity UI/UX design for a wellness clinic focusing on clear information hierarchy, accessible components, and a streamlined appointment booking flow. Created interactive prototypes in Figma and delivered responsive, pixel-perfect screens for mobile and desktop.
                             </p>
                             <div className="flex gap-4">
-                                <button className="text-sm font-semibold text-white flex items-center gap-2 hover:text-cyan-400 transition-colors">
-                                    <ExternalLink className="w-4 h-4" /> Live Demo
-                                </button>
+                                <a href="https://www.figma.com/design/Xg9t6LVwGMecUeTpmFOtmd/Balavi?node-id=2-2&t=7HyTqSHAYyXQzy7y-1" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-400 flex items-center gap-2 hover:text-white transition-colors">
+                                    <PenTool className="w-4 h-4" /> View Figma
+                                </a>
                             </div>
                         </div>
                     </div>
